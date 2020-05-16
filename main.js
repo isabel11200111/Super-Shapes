@@ -108,3 +108,16 @@ anime({
   direction: 'alternate',
   easing:'easeInOutSine'
 })
+
+// turning squares
+anime({
+  targets:'#squares rect',
+  translateX:['-50%','-50%'],
+  translateY:['-50%', '-50%'],
+  rotate:[45, 0, -45],
+  delay:(el, i) => 100 * i,
+  duration:(el, i) => 750,
+  loop:true,
+  direction:'alternate',
+  easing:'easeInOutSine',
+})
